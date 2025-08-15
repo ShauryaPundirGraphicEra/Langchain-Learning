@@ -1,0 +1,1 @@
+Document loader are component in LAngchain used to load data from various sources intoa standardized format .Which can be used for the chunking,embedding,retrieval,and generation.

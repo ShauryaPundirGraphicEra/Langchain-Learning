@@ -1,0 +1,14 @@
+// So there are 2 types of Rettiver broadly
+
+1) Data Source based Retriever:
+   a) Wikipidea Retriever
+   b)Vector Store based
+   c)Archive Retriever
+   d) etc
+
+2) Search Statergy based:
+  a) MMR : MAximum MArginal Relevance
+  b) Mult query Retriever
+  c) etc
+
+  https://colab.research.google.com/drive/19J7u1KrvUaedGRZvs8oSwf1rTOnZv_EE#scrollTo=UhWks7OOFUf4&uniqifier=1

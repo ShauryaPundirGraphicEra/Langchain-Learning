@@ -1,4 +1,4 @@
-# 🦜🔗 LangChain & RAG Comprehensive Toolkit
+# 🦜🔗 LangChain & RAG Comprehensive Toolkit with Ask WebPage Project
 
 A deep dive into Large Language Model (LLM) orchestration, Retrieval-Augmented Generation (RAG), and custom AI application development using LangChain. 
 
@@ -70,10 +70,17 @@ Located in `Prompts/`, moving beyond CLI to interactive web apps:
 * **Research Paper Summarizer (`Research_paper_summarizer_Dynamic_Prompt.py`)**: A dynamic Streamlit tool where users can select academic papers, explanation styles (e.g., Beginner-Friendly, Mathematical, Code-Oriented), and lengths, which dynamically updates the LLM prompt.
 * **Static Q&A (`QnA_Static_Prompt.py`)**: A straightforward interface for asking questions using Hugging Face's Mistral model.
 
-### 6. Full-Stack "Ask Webpage" Application
-Located in `ask-webpage-backend/` and `ask-webpage-extension/`:
-* **FastAPI Backend (Manually Coded)**: A Python backend (`backend.py`) built fundamentally from scratch utilizing LangChain and FastAPI documentation. It receives the URL and user question, fetches the web page content, processes it, and returns a context-aware answer.
-* **Chrome Extension Frontend (Vibecoded)**: The frontend extension (`popup.html`, `popup.js`, `manifest.json`) was **vibecoded** (AI-assisted/generated) to rapidly build a clean interface that captures the current active tab's URL, accepts user questions, and communicates seamlessly with the backend.
+### 6. 🌐 Highlight Project: "Ask Webpage" Full-Stack Application
+Located in `ask-webpage-backend/` and `ask-webpage-extension/`, this is a practical, end-to-end AI product that allows you to chat with any active webpage you are currently viewing.
+
+**How It Works:**
+1. **Capture:** The user clicks the Chrome extension and types a question. The extension automatically grabs the active tab's URL.
+2. **Process:** The URL and query are sent to the local API. LangChain dynamically scrapes the webpage, chunks the text, and feeds it into the LLM as context.
+3. **Answer:** The LLM streams a context-aware answer back to the extension UI.
+
+**The Tech Stack & Development Approach:**
+* **FastAPI Backend (Manually Engineered)**: Built from scratch utilizing Python, **FastAPI**, and **LangChain** (`WebBaseLoader`, Prompt Templates, and LLM chains). This handles the heavy lifting, routing, and prompt execution.
+* **Chrome Extension (Vibecoded)**: The frontend (`popup.html`, `popup.js`, `manifest.json`) was **vibecoded** (rapidly prototyped using AI generation). This approach allowed for a clean, functional UI to capture DOM elements and handle API requests without getting bogged down in frontend boilerplate.
 
 
 

@@ -1,4 +1,4 @@
-# 🦜🔗 LangChain & RAG Comprehensive Toolkit with Ask WebPage Project
+# 🦜🔗 LangChain & RAG Learning with Ask WebPage Project
 
 A deep dive into Large Language Model (LLM) orchestration, Retrieval-Augmented Generation (RAG), and custom AI application development using LangChain. 
 
